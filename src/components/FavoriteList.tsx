@@ -5,9 +5,7 @@ import './FavoriteList.css';
 const FavoriteList = () => {
     return (
        <div className="FavoriteList">
-           <ul>
-
-           </ul>
+           <h1>Your favorite list</h1>
            <Link to={"/"}>To go back to main menu</Link>
        </div>
     );
