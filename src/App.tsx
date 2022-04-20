@@ -5,7 +5,7 @@ import { Navigate, Route, Router, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Movie from './components/MovieComponent';
 import FavoriteList from './components/FavoriteList';
-
+import AddFavorites from './components/AddFavorites';
 function App() {
   return (
     

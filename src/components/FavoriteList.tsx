@@ -9,7 +9,7 @@ function FavoriteList() {
        <div>
            <h1>Your favorite movies</h1>
            <ul>
-               {favoriteMovies.map((todo, i) =>
+               {favoriteMovies.map((fav, i) =>
                <li key={i}>{}</li>)}
            </ul>
            <Link to={"/"}>To go back to main menu</Link>
