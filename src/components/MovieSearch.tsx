@@ -2,8 +2,9 @@ import { FormEvent, useState } from 'react'
 import './MovieSearch.css'
 
 interface Props {
-    onSubmit: (genre:string,rating:string,length:number) => void;
+    onSubmit:(genre:string,rating:string,length:number) => void;
 }
+
 function MovieSearch({onSubmit}:Props) {
     const [genre,setGenre] = useState("");
     const [rating,setRating] = useState("");
