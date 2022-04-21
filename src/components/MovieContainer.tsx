@@ -15,7 +15,8 @@ export default function MovieContainer() {
 
     return(
         <div className="MovieContainer">
-            //the movies here
+            {movies.map(movie =>
+            <p key ={movie.id}><SingleMovie movie ={movie}/></p>)}
         </div>
     )
 }
