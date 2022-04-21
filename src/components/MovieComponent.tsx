@@ -8,6 +8,13 @@ interface Props {
 }
 
 export default function SingleMovie({movie}: Props) {
+const [movies, setMovies] = useState<Movie[]>([]);
+
+    useEffect(() => {
+        fetchMovies().then(data => {
+            setMovies(data);
+        });
+    }, []);
 
  return (
     <div className = "Movie">
