@@ -16,11 +16,11 @@ function FavoriteList() {
 
     return (
        <div className="FavoriteList">
-           <h1>Your favorite movies</h1>
+           <h2>Your favorite movies</h2>
                 {favoriteMovies.map((favoriteMovies, i) =>
                 <img className="Poster" key={i} src={"https://image.tmdb.org/t/p/original/" + favoriteMovies.poster_path}/>)}    
                 <RemoveFavorite />
-           <Link to={"/"}>To go back to main menu</Link>
+                <p><Link to={"/"}>Return to Main Menu</Link></p>
        </div>
     );
 };

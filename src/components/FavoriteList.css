@@ -1,0 +1,14 @@
+h2 {
+    font-size: 40px;
+}
+
+.FavoriteList {
+    height: 100vh;
+    background-color: #0B0E4E;
+}
+
+@media only screen and (min-width: 600px) {
+    .FavoriteList {
+     
+    }
+}
