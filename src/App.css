@@ -1,4 +1,40 @@
 .App {
+    
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
     background-color: #13165A;
     color: white;
+}
+
+.Movie {
+    min-width: 200px;
+    flex-grow: 1;
+    margin: 0px;
+    margin-right: 30px;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.FavoriteButton {
+    max-width: 70%;
+
+}
+
+.Poster {
+    max-width: 70%;
+}
+
+.MovieContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 3;
+}
+
+.Header {
+    background-color: red;
 }
