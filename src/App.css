@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* { margin: 0; padding: 0; }
+
+body, html {
+    font-family: 'Pacifico', cursive;
+    margin-top: 0px;
+}
+
 .App {
-    
-    font-family: 'Open Sans', sans-serif;
     margin: 0px;
     background-color: #13165A;
     color: white;
@@ -8,18 +14,17 @@
 
 .Movie {
     min-width: 200px;
-    flex-grow: 1;
-    margin: 0px;
-    margin-right: 30px;
+
     max-width: 30%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
 
 .FavoriteButton {
-    max-width: 70%;
+    max-width: 30%;
+    font-size: 30px;
+    color: palevioletred;
 
 }
 
@@ -37,4 +42,16 @@
 
 .Header {
     background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Inputs {
+    width: 50%;
+}
+
+#SubmitButton {
+    font-family: 'Pacifico', cursive;
+    width: 50%;
+    height: auto;
 }

@@ -1,0 +1,9 @@
+.MovieSearch {
+    height:180px;
+}
+
+input {
+    height:20px;
+    width:10%;
+    margin:5px;
+}

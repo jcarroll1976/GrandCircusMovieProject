@@ -21,21 +21,21 @@ function MovieSearch({onSubmit}:Props) {
             <form onSubmit={handleSubmit}>
                     
                     <p>
-                        <label htmlFor="MovieSearch_genre">Genre</label>
-                        <input id = "MovieSearch_genre" required value={genre}
+                        <label className="Labels" htmlFor="MovieSearch_genre">Genre</label>
+                        <input className = "Inputs" id = "MovieSearch_genre" required value={genre}
                             onChange = {e => setGenre(e.target.value)} />
                     </p>
                     <p>
-                        <label htmlFor="MovieSearch_rating">Rating</label>
-                        <input id = "MovieSearch_rating" required value={rating}
+                        <label className = "Labels" htmlFor="MovieSearch_rating">Rating</label>
+                        <input className = "Inputs" id = "MovieSearch_rating" required value={rating}
                             onChange = {e => setRating(e.target.value)} />
                     </p>
                     <p>
-                        <label htmlFor="MovieSearch_length">Length</label>
-                        <input id = "MovieSearch_length" required value={length}
+                        <label className = "Labels" htmlFor="MovieSearch_length">Length</label>
+                        <input className = "Inputs" id = "MovieSearch_length" required value={length}
                             onChange = {e => setLength(e.target.value)} />
                     </p>
-                    <input type="submit" value="Add Post" />
+                    <input id="SubmitButton" type="submit" value="Search Movies" />
                 </form>
         </div>
     )
