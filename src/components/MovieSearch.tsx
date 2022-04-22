@@ -35,7 +35,7 @@ function MovieSearch({onSubmit}:Props) {
                         <input id = "MovieSearch_length" required value={length}
                             onChange = {e => setLength(e.target.value)} />
                     </p>
-                    <input type="submit" value="Add Post" />
+                    <input type="submit" value="Search Movies" />
                 </form>
         </div>
     )
