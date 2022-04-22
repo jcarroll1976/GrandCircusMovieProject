@@ -10,7 +10,7 @@ import MovieContainer from './components/MovieContainer';
 
 function App() {
   return (
-    
+    <div className = "App">
       <Router>
         <Header />
         <Routes>
@@ -20,7 +20,9 @@ function App() {
         </Routes>
         
       </Router>
+      </div>
   );
+
 }
 
 export default App;

@@ -18,7 +18,7 @@ const [movies, setMovies] = useState<Movie[]>([]);
     }, []);
  return (
     <div className = "Movie">
-        <img src={movie.poster_path}></img>
+        <img className="Poster" src={"https://image.tmdb.org/t/p/original/" + movie.poster_path}/>
         <AddFavorites />
     </div>
  )

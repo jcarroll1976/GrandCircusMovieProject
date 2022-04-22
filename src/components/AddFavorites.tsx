@@ -2,7 +2,7 @@ import React from "react";
 
 function AddFavorites() {
     return (
-            <button>Favorite</button>
+            <button className = "FavoriteButton">Favorite</button>
     );
 };
 
