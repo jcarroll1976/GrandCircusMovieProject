@@ -7,7 +7,7 @@ function Header() {
     const [searchParams] = useSearchParams()
     return(
     <header className="Header">
-        <h1 className = "MovieSearch">Movie Search</h1>
+        <h1 className = "MovieSearchHeader">&#9733;Movie Search&#9733;</h1>
         <div>
             <MovieSearch onSubmit={useSearchParams} /> 
         </div>
