@@ -10,14 +10,15 @@ body, html {
     margin: 0px;
     background-color: #13165A;
     color: white;
+    height: 100vh;
 }
 
 .Movie {
     min-width: 200px;
-
     max-width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -34,16 +35,18 @@ body, html {
 
 .MovieContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 3;
+    flex-direction: column;
 }
+
 
 .Header {
     background-color: red;
     display: flex;
     justify-content: space-between;
+}
+
+h1 {
+    font-size: 45px;
 }
 
 .Inputs {
@@ -54,4 +57,20 @@ body, html {
     font-family: 'Pacifico', cursive;
     width: 50%;
     height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 75px;
+    }
+
+    .Labels {
+        font-size:20px;
+    }
+    .MovieContainer {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+
+    }
 }
