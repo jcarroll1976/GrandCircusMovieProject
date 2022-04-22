@@ -9,7 +9,7 @@ body, html {
 
 .App {
     margin: 0px;
-    background-color: #13165A;
+    background-color: #0B0E4E;
     color: white;
 }
 
@@ -42,7 +42,7 @@ body, html {
 
 
 .Header {
-    border: 5px dotted;
+    border: 8px dotted;
     border-radius:15px;
     border-color: yellow;
     background-color: #D50000;
@@ -110,5 +110,10 @@ h1 {
 
     .App {
         height: 100vh;
+    }
+
+    .Header {
+        border: 10px dotted;
+        border-color: yellow
     }
 }
