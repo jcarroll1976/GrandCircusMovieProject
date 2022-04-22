@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function SingleMovie({movie}: Props) {
-const [favorites, setFavorites] =useState([]);
  return (
     <div className = "Movie">
         <img src={movie.poster_path}></img>
