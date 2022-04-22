@@ -1,4 +1,4 @@
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import MovieSearch from "./MovieSearch";
 
 
@@ -8,6 +8,7 @@ function Header() {
     return(
     <header className="Header">
         <h1>Movie Search</h1>
+        <Link to={`/favorite-list/`}>Favorite List</Link>
         <div>
             <MovieSearch onSubmit={useSearchParams} /> 
         </div>

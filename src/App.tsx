@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element = {<MovieContainer />} />
-          <Route path='' element = {<FavoriteList />} />
+          <Route path='/favorite-list/' element = {<FavoriteList />} />
           <Route path='*' element = {<Navigate to = '/'/>} />
         </Routes>
         
