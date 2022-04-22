@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* { margin: 0; padding: 0; }
 
-body {
+body, html {
     font-family: 'Pacifico', cursive;
+    margin-top: 0px;
 }
 
 .App {
-    
-
     margin: 0px;
     background-color: #13165A;
     color: white;
@@ -14,9 +14,7 @@ body {
 
 .Movie {
     min-width: 200px;
-    flex-grow: 1;
-    margin: 0px;
-    margin-right: 30px;
+
     max-width: 30%;
     display: flex;
     flex-direction: column;
@@ -44,4 +42,16 @@ body {
 
 .Header {
     background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Inputs {
+    width: 50%;
+}
+
+#SubmitButton {
+    font-family: 'Pacifico', cursive;
+    width: 50%;
+    height: auto;
 }
