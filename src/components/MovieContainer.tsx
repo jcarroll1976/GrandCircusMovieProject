@@ -22,14 +22,14 @@ export default function MovieContainer() {
         })
     }
     return(
-
+    <div>
         <div className="MovieContainer">
              {movies.map(movie =>
             <p className="Movie_p" key ={movie.id}><SingleMovie movie ={movie}/></p>)}
-            <div>
+        </div>
+        <div>
         <MovieSearch onSubmit={handleSubmit} /> 
     </div>
-        </div>
-        
+    </div>   
     )
 }

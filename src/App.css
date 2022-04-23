@@ -62,12 +62,12 @@ h1 {
 }
 
 .Inputs {
-    width: 50%;
+    width: 20%;
 }
 
 #SubmitButton {
     font-family: 'Pacifico', cursive;
-    width: 50%;
+    width: 20%;
     height: auto;
 }
 
