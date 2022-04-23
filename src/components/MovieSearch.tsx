@@ -2,18 +2,19 @@ import { FormEvent, useState } from 'react'
 import './MovieSearch.css'
 
 interface Props {
-    onSubmit:(genre:string,rating:string,length:number) => void;
+    onSubmit:(primary_release_year:number) => void;
 }
 
 function MovieSearch({onSubmit}:Props) {
-    const [genre,setGenre] = useState("");
-    const [rating,setRating] = useState("");
-    const [length,setLength] =useState("");
+    const [primary_release_year,setPrimary_Release_Year] =useState("");
+
+    /*const [genre,setRating] = useState("");
+const [length,setLength] =useState("");*/
 
 
     function handleSubmit(e: FormEvent) {
         e.preventDefault();
-        onSubmit(genre,rating,Number(length));
+        onSubmit(Number(primary_release_year));
     }
         
     return (
@@ -21,20 +22,23 @@ function MovieSearch({onSubmit}:Props) {
             <form onSubmit={handleSubmit}>
                     
                     <p>
-                        <label className="Labels" htmlFor="MovieSearch_genre">Genre</label>
-                        <input className = "Inputs" id = "MovieSearch_genre" required value={genre}
-                            onChange = {e => setGenre(e.target.value)} />
+                        <label className="Labels" htmlFor="MovieSearch_year">Release Year</label>
+                        <input className = "Inputs" id = "MovieSearch_year" required value={primary_release_year}
+                            onChange = {e => setPrimary_Release_Year(e.target.value)} />
                     </p>
-                    <p>
-                        <label className = "Labels" htmlFor="MovieSearch_rating">Rating</label>
-                        <input className = "Inputs" id = "MovieSearch_rating" required value={rating}
-                            onChange = {e => setRating(e.target.value)} />
-                    </p>
+                    {/*<p>
+                    <select value={this.state.value} onChange={this.handleChange}>
+            <option value="horror">Horror</option>
+            <option value="adventure">Adventure</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="mystery">Mystery</option>
+          </select>
+    </p>
                     <p>
                         <label className = "Labels" htmlFor="MovieSearch_length">Length</label>
                         <input className = "Inputs" id = "MovieSearch_length" required value={length}
-                            onChange = {e => setLength(e.target.value)} />
-                    </p>
+    onChange = {e => setLength(e.target.value)/>
+    </p>*/}
                     <input id="SubmitButton" type="submit" value="Search Movies" />
                 </form>
         </div>

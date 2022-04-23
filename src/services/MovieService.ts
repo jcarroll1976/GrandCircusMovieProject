@@ -8,3 +8,7 @@ export function fetchMovies(): Promise<Movie[]> {
     .then(response => response.data.results);
 }
 
+export function fetchFilteredMovies(primary_release_year:number): Promise<Movie[]> {
+    return axios.get<APIResponse>(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&primary_release_year=${primary_release_year}&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`)
+    .then(response => response.data.results);
+}

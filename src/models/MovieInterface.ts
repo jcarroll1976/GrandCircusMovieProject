@@ -19,3 +19,4 @@ export interface APIResponse {
 export interface GenreResults {
     genre_ids: number[];
 }
+
