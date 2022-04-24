@@ -2,6 +2,7 @@ import React, {ReactNode, useState} from 'react';
 import Movie from '../models/MovieInterface';
 import MovieContext from '../context/MovieContext'
 import { setSourceMapRange } from 'typescript';
+import RemoveFavorite from '../components/RemovingFavorites';
 
 interface Props {
     children: ReactNode;
@@ -16,7 +17,7 @@ export default function MovieContextProvider({children}: Props) {
 
     const removeFavorite=(faveMovie: Movie)=>{
         var index= favoriteMovies.indexOf(faveMovie)
-        if(index!==-1){
+        if(index! === index){
             setFavoriteMovies(prev=>prev.splice(index, 1))
         }
     }

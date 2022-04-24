@@ -18,8 +18,7 @@ function FavoriteList() {
        <div className="FavoriteList">
            <h2>Your favorite movies</h2>
                 {favoriteMovies.map((favoriteMovies, i) =>
-                <img className="Poster" key={i} src={"https://image.tmdb.org/t/p/original/" + favoriteMovies.poster_path}/>)}    
-                <RemoveFavorite />
+                <><img className="Poster" key={i} src={"https://image.tmdb.org/t/p/original/" + favoriteMovies.poster_path} /><button  onClick={() => removeFavorite(favoriteMovies)} className="" key={i}> Remove Favorite</button></>)}    
                 <p><Link to={"/"}>Return to Main Menu</Link></p>
        </div>
     );
