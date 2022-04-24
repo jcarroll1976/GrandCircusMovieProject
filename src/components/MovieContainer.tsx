@@ -16,8 +16,8 @@ export default function MovieContainer() {
         });
     }, []);
 
-    function handleSubmit(primary_release_year:number,genre:string) {
-        fetchFilteredMovies(primary_release_year,genre).then(data => {
+    function handleSubmit(primary_release_year:number,rating:number,genre:string) {
+        fetchFilteredMovies(primary_release_year,rating,genre).then(data => {
             setMovies(data);
         })
     }
