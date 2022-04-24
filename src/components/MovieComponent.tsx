@@ -10,13 +10,7 @@ interface Props {
 
 export default function SingleMovie({movie}: Props) {
 const {favoriteMovies , addFavorite, removeFavorite} = useContext(MovieContext)
-const [movies, setMovies] = useState<Movie[]>([]);
 
-    useEffect(() => {
-        fetchMovies().then(data => {
-            setMovies(data);
-        });
-    }, []);
 
 
 
