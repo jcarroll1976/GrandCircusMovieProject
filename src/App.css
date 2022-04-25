@@ -35,6 +35,10 @@ body, html {
     height: 300px;
 }
 
+.Description {
+    font-size: 80%;
+}
+
 .MovieContainer {
     display: flex;
     flex-direction: column;
