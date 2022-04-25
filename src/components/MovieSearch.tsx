@@ -17,6 +17,7 @@ const [length,setLength] =useState("");*/
         e.preventDefault();
         onSubmit(Number(primary_release_year),Number(rating),genre);
         setPrimary_Release_Year("")
+        setRating("")
     }
         
     return (
@@ -31,10 +32,11 @@ const [length,setLength] =useState("");*/
                    <p>
                         <label className="Labels" htmlFor="MovieSearch_rating">Search By Rating(1-10)</label>
                         <input className = "Inputs" id = "MovieSearch_rating" value={rating}
-                            onChange = {e => setRating(e.target.value)} />
+    onChange = {e => setRating(e.target.value)} />
     </p>
     <p>
-                    <select value={genre} onChange={e => setGenre(e.target.value)}>
+                    <label className='Labels' htmlFor='MovieSearch_dropdown'>Search by Genre</label>
+                    <select id="MovieSearch_dropdown" value={genre} onChange={e => setGenre(e.target.value)}>
                         <option value="27">Horror</option>
                         <option value="12">Adventure</option>
                         <option value="878">Sci-Fi</option>

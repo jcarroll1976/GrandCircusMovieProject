@@ -14,15 +14,11 @@ export default interface Movie {
 
 export interface APIResponse {
     results: Movie[];
-    genres: Genre[];
+    
 }
 
 export interface GenreResults {
     genre_ids: number[];
 }
 
-export interface Genre {
-    id:number;
-    name:string;
-}
 
